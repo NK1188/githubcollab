@@ -15,8 +15,18 @@ struct ContentView: View {
                 .foregroundStyle(.tint)
             Text("Hello, world!")
             Text("change 1")
+            
         }
         .padding()
+        NavigationStack{
+            VStack{
+                Text("Log in page")
+                // name it smth else later
+                NavigationLink(destination: Text("You've arrived to the Second View 🎊")) {
+                    Text("Log In")
+                }
+            }
+        }
     }
 }
 
