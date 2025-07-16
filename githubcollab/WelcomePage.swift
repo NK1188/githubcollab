@@ -25,18 +25,27 @@ struct WelcomePage: View {
         VStack{
             Text("Contents")
             //idk what to call it so change the name later
+                .font(.headline)
+                .foregroundColor(.gray)
+                .padding(.top, 10)
             VStack{
-                Text("Mood Tracker + Daily log in")
+                    Text("Mood Tracker + Daily log in")
             }
             .padding(20)
+            
             VStack{
-                Text("Personal Journal")
+                NavigationLink(destination: JournalEntry()) {
+                    Text("Personal Journal")
+                }
+               
             }
             .padding(20)
+            
             VStack{
-                Text("General Journal")
+                    Text("General Journal")
             }
             .padding(20)
+            
         }
         .padding(.bottom,200)
         .padding(.top, 100)
