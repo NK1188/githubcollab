@@ -70,13 +70,7 @@ struct ContentView: View {
            // .background(Color(.systemGray6))
             // above works for complete background so change that color later
 
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-            Text("change 1")
-            Text("Change 2")
+            
 
         }
     }
