@@ -11,6 +11,7 @@ struct WelcomePage: View {
    
     
     var body: some View {
+
         VStack{
             HStack{
                 Image(systemName: "face.smiling")
@@ -51,7 +52,10 @@ struct WelcomePage: View {
                // .padding(.top, 10)
             
             VStack{
-                    Text(" 🌿 Mood Tracker + Daily Log")
+                NavigationLink(destination: MoodCheckerView()) {
+                    Text(" 🌿 Mood Checker + Daily Log")
+                }
+                    
             }
             .padding(20)
             .background(Color.white)
@@ -97,8 +101,12 @@ struct WelcomePage: View {
         //changes the font color? above
         .background(Color.gray)
         .cornerRadius(20)
+
+       
+        }
+
     }
-}
+
 
 #Preview {
     WelcomePage()
