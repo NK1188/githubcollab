@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+//   @State private var  username: String = ""
+// @State private var password : String = ""
+//  @State private var isLoggedIn: Bool = false
+    
     var body: some View {
         
         NavigationStack{
@@ -27,7 +31,7 @@ struct ContentView: View {
                 VStack{
                     VStack{
                         Text("USERNAME")
-                        TextField("Enter your username ", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                        TextField("Enter your username", text: <#Binding<String>#>)
                             .multilineTextAlignment(.center)
                             .font(.title)
                             .border(Color.gray, width: 1)
@@ -38,7 +42,7 @@ struct ContentView: View {
                     
                     VStack{
                         Text("PASSWORD")
-                        TextField("Enter your password", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                        TextField("Enter your password")
                             .multilineTextAlignment(.center)
                             .font(.title)
                             .border(Color.gray, width: 1)
@@ -53,6 +57,8 @@ struct ContentView: View {
                 .shadow(color: .gray.opacity(0.3), radius : 5, x: 0, y: 3)
                 Spacer()
                 // name it smth else later
+               
+
                 NavigationLink(destination: WelcomePage()) {
                     Text("Log In")
                 }
@@ -60,6 +66,7 @@ struct ContentView: View {
                 .buttonStyle(.bordered)
                 .tint(.gray)
                 .padding(.bottom, 30)
+                .navigationTitle("Login")
                 
                 //.navigationTitle("SIGN IN")
                 // .navigationBarTitleDisplayMode(.inline)
@@ -73,8 +80,8 @@ struct ContentView: View {
             
         }
     }
-    
+}
 #Preview {
         ContentView()
     }
-}
+
