@@ -53,6 +53,9 @@ struct ReflectionPage: View {
                         .fontWeight(.semibold)
                         .multilineTextAlignment(.center)
                     TextField("Click to Write", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                    NavigationLink(destination: thankyoupage()) {
+                        Text("NEXT PAGE")
+                    }
 
                 }
             }
