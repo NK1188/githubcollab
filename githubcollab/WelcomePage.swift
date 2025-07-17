@@ -9,46 +9,48 @@ import SwiftUI
 
 struct WelcomePage: View {
     var body: some View {
-        VStack{
-            Text("Welcome Back!")
-                .padding()
-                .font(.largeTitle)
-                .fontWeight(.bold)
-                .foregroundColor(.gray)
-            //or wtv color edit that
-                .background(Color(.systemGray6))
-                .cornerRadius(10)
-                .shadow(color: .gray.opacity(0.4), radius: 5, x: 0, y: 4)
-        }
-        .padding(.bottom, 50)
-        .padding(.top, 50)
-        VStack{
-            Text("Contents")
-            //idk what to call it so change the name later
-                .font(.headline)
-                .foregroundColor(.gray)
-                .padding(.top, 10)
+        NavigationStack {
             VStack{
-                    Text("Mood Tracker + Daily log in")
+                Text("Welcome Back!")
+                    .padding()
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .foregroundColor(.gray)
+                //or wtv color edit that
+                    .background(Color(.systemGray6))
+                    .cornerRadius(10)
+                    .shadow(color: .gray.opacity(0.4), radius: 5, x: 0, y: 4)
             }
-            .padding(20)
-            
+            .padding(.bottom, 50)
+            .padding(.top, 50)
             VStack{
-                NavigationLink(destination: JournalEntry()) {
-                    Text("Personal Journal")
+                Text("Contents")
+                //idk what to call it so change the name later
+                    .font(.headline)
+                    .foregroundColor(.gray)
+                    .padding(.top, 10)
+                NavigationLink(destination: MoodTracker1()) {
+                    Text("Mood Tracker")
+                    .padding(20)
+                    
+                    VStack{
+                        NavigationLink(destination: JournalEntry()) {
+                            Text("Personal Journal")
+                        }
+                        
+                    }
+                    .padding(20)
+                    
+                    VStack{
+                        Text("General Journal")
+                    }
+                    .padding(20)
+                    
                 }
-               
+                .padding(.bottom,200)
+                .padding(.top, 100)
             }
-            .padding(20)
-            
-            VStack{
-                    Text("General Journal")
-            }
-            .padding(20)
-            
         }
-        .padding(.bottom,200)
-        .padding(.top, 100)
     }
 }
 
