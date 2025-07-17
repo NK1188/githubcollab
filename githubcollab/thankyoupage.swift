@@ -41,6 +41,10 @@ struct thankyoupage: View {
                     }
                     
                     .padding()
+                    .font(.title2)
+                    .buttonStyle(.bordered)
+                    .tint(.gray)
+                    .padding(.bottom, 30)
                     
                 }
                 
