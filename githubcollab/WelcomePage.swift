@@ -28,15 +28,14 @@ struct WelcomePage: View {
                 .font(.headline)
                 .foregroundColor(.gray)
                 .padding(.top, 10)
+            
             VStack{
                     Text("Mood Tracker + Daily log in")
             }
             .padding(20)
             
             VStack{
-                NavigationLink(destination: JournalEntry()) {
                     Text("Personal Journal")
-                }
                
             }
             .padding(20)
