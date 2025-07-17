@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct WelcomePage: View {
-    var username : String
+   
     
     var body: some View {
         VStack{
@@ -18,7 +18,7 @@ struct WelcomePage: View {
                     .frame(width:25, height:25)
                     .foregroundColor(.gray)
                     .padding()
-                Text("Hello, \(username)!")
+                Text("Hello, Navya!")
                     .font(.headline)
                     .foregroundColor(.gray)
                 Spacer()
