@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-
+        
         NavigationStack{
             VStack{
                 Text("Sign In")
@@ -21,7 +21,7 @@ struct ContentView: View {
                     .background(Color(.systemGray6))
                     .cornerRadius(10)
                     .shadow(color: .gray.opacity(0.4), radius: 5, x: 0, y: 4)
-                    
+                
                 
                 Spacer()
                 VStack{
@@ -60,28 +60,21 @@ struct ContentView: View {
                 .buttonStyle(.bordered)
                 .tint(.gray)
                 .padding(.bottom, 30)
-               
+                
                 //.navigationTitle("SIGN IN")
-               // .navigationBarTitleDisplayMode(.inline)
+                // .navigationBarTitleDisplayMode(.inline)
                 //.navigationBarTitleDisplayMode(.large)
-        // idk what this is
-               
+                // idk what this is
+                
             }
-           // .background(Color(.systemGray6))
+            // .background(Color(.systemGray6))
             // above works for complete background so change that color later
-
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-            Text("change 1")
-            Text("Change 2")
-
+            
+            
         }
     }
-}
-
-#Preview {
-    ContentView()
+    
+    #Preview {
+        ContentView()
+    }
 }
