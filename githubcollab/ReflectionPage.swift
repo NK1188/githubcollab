@@ -12,6 +12,7 @@ struct ReflectionPage: View {
         NavigationStack {
             ZStack {
                 Color.blue.opacity(0.1)
+                    .cornerRadius(20)
                 VStack {
                     Text("Reflections Page")
                         .font(.title)
