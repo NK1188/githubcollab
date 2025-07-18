@@ -13,6 +13,7 @@ struct WelcomePage: View {
     var body: some View {
 
         VStack{
+            
             HStack{
                 Image(systemName: "face.smiling")
                     .resizable()
@@ -30,14 +31,15 @@ struct WelcomePage: View {
                 .fontWeight(.bold)
                 .foregroundColor(.gray)
             //or wtv color edit that
-                .background(Color(.systemGray6))
+                .background(Color(.purple.opacity(0.2)))
                 .cornerRadius(10)
-                .shadow(color: .gray.opacity(0.4), radius: 5, x: 0, y: 4)
+                .shadow(color: .purple.opacity(0.4), radius: 5, x: 0, y: 4)
             Text("Progress over perfection.")
                 .font(.subheadline)
                 .foregroundColor(.gray)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal)
+                
              
         }
         .padding(.bottom)
@@ -99,15 +101,14 @@ struct WelcomePage: View {
         .padding(.horizontal, 20)
         .foregroundColor(.gray)
         //changes the font color? above
-        .background(Color.gray)
+        .background(Color.pink.opacity(0.3))
         .cornerRadius(20)
 
        
         }
-
+        
     }
-
-
+    
 #Preview {
     WelcomePage()
 }

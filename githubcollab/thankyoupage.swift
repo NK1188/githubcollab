@@ -15,6 +15,7 @@ struct thankyoupage: View {
             ZStack {
                 
                 Color.purple.opacity(0.1)
+                  
                 
                 
                 VStack {
